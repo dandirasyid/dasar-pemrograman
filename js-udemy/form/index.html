@@ -3,12 +3,116 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>FORM</title>
+        <title>FORM | Atribut Form, Input, Label, Submit</title>
     </head>
     <body>
-        <form action="#" enctype="application/x-www-form-urlencoded" target="_blank" method="post">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name">
+        <form
+            enctype="application/x-www-form-urlencoded"
+            name="registration"
+            method="get"
+            action="recieve.html"
+        >
+            <!-- Input Name -->
+            <label for="name">Name</label><br />
+            <input type="text" name="name" id="name" id="name" /><br />
+
+            <!-- Input Email -->
+            <label for="email">Email</label><br />
+            <input type="text" name="email" id="email" /><br />
+
+            <!-- Input Telepon -->
+            <label for="telepon">Telepon</label><br />
+            <input type="text" name="telepon" id="telepon" /><br />
+
+            <!-- Input Checkbox -->
+            <label for="hobby">Hobby</label><br />
+
+            <input type="checkbox" name="hobby" id="reading" value="reading" />
+            <label for="reading">Reading</label><br />
+            <input type="checkbox" name="hobby" id="gaming" value="gaming" />
+            <label for="gaming">Gaming</label><br />
+            <input type="checkbox" name="hobby" id="coding" value="coding" />
+            <label for="coding">Coding</label><br />
+
+            <!-- Input Color -->
+            <label for="favorite">Warna Kesukaan :</label>
+            <input
+                type="color"
+                name="favorite"
+                id="favorite"
+                value="#ff0000"
+            /><br />
+
+            <!-- Input Date -->
+            <label for="join_date">Tanggal Masuk :</label>
+            <input
+                type="date"
+                name="join_date"
+                id="join_date"
+                value="2025-02-06"
+                min="2024-01-01"
+                max="2025-12-30"
+            /><br />
+
+            <!-- Input Date Time -->
+            <label for="jam_masuk">Jam Masuk :</label>
+            <input
+                type="datetime-local"
+                name="jam_masuk"
+                id="jam_masuk"
+            /><br />
+
+            <!-- Input Month -->
+            <label for="expired">Bulan Kadaluwarsa :</label>
+            <input
+                type="month"
+                name="expired"
+                id="expired"
+                value="2025-02"
+            /><br />
+
+            <!-- Input Time -->
+            <label for="jam_masuk">Jam Masuk :</label>
+            <input
+                type="time"
+                name="jam_masuk"
+                id="jam_masuk"
+                value="08:00"
+            /><br />
+            <label for="jam_keluar">Jam Keluar :</label>
+            <input
+                type="time"
+                name="jam_keluar"
+                id="jam_keluar"
+                value="17:00"
+            /><br />
+
+            <!-- Input Week -->
+            <label for="waktu_mulai">Waktu Mulai :</label>
+            <input
+                type="week"
+                name="waktu_mulai"
+                id="waktu_mulai"
+                value="2025-W01"
+            /><br />
+            <label for="waktu_selesai">Waktu Selesai :</label>
+            <input
+                type="week"
+                name="waktu_selesai"
+                id="waktu_selesai"
+                value="2025-W52"
+            /><br />
+
+            <br />
+            <!-- Input Reset -->
+            <input type="reset" value="Reset" />
+
+            <!-- Input Submit -->
+            <input type="submit" value="Registration" /><br /><br />
+
+            <!-- Input Button -->
+            <input type="button" value="Hello" onclick="alert('Hello')" />
+            <input type="button" value="World" onclick="alert('World')" />
         </form>
     </body>
 </html>

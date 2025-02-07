@@ -7,7 +7,7 @@
     </head>
     <body>
         <form
-            enctype="application/x-www-form-urlencoded"
+            enctype="multipart/form-data"
             name="registration"
             method="get"
             action="recieve.html"
@@ -18,7 +18,7 @@
 
             <!-- Input Email -->
             <label for="email">Email</label><br />
-            <input type="text" name="email" id="email" /><br />
+            <input type="email" name="email" id="email" required /><br />
 
             <!-- Input Telepon -->
             <label for="telepon">Telepon</label><br />
@@ -102,6 +102,74 @@
                 id="waktu_selesai"
                 value="2025-W52"
             /><br />
+
+            <!-- Input File -->
+            <label for="file">Masukkan File :</label>
+            <input type="file" name="file" id="file" /><br />
+
+            <!-- Input Hidden -->
+            <input type="hidden" name="user_id" value="dandi" />
+            <label for="nama_lengkap">Nama :</label>
+            <input type="text" name="nama_lengkap" id="nama_lengkap" /><br />
+
+            <!-- Input Number -->
+            <label for="nilai_ujian">Nilai Ujian :</label>
+            <input
+                type="number"
+                name="nilai_ujian"
+                id="nilai_ujian"
+                min="0"
+                max="100"
+                value="0"
+            /><br />
+
+            <!-- Input Password -->
+            <label for="password">Password :</label>
+            <input type="password" name="password" id="password" /><br />
+
+            <!-- Input Radio -->
+            <label for="pertanyaan"
+                >Budi memiliki uang 10.000, dibelikan coklat 5.000, sisa uangnya
+                adalah?</label
+            ><br />
+            <input type="radio" name="jawaban" id="jawaban1" value="A" /><label
+                for="jawaban1"
+                >4.500</label
+            ><br />
+            <input type="radio" name="jawaban" id="jawaban2" value="B" /><label
+                for="jawaban2"
+                >5.000</label
+            ><br />
+            <input type="radio" name="jawaban" id="jawaban3" value="C" /><label
+                for="jawaban3"
+                >6.000</label
+            >
+            <br />
+
+            <!-- Input Range -->
+            <label for="nilai">Nilai UAS :</label>
+            <input
+                type="range"
+                name="nilai"
+                id="nilai"
+                value="50"
+                min="0"
+                max="100"
+                step="10"
+            /><br />
+
+            <!-- Input Telepon -->
+            <label for="nomor_telepon">Nomor Telepon :</label>
+            <input
+                type="tel"
+                name="nomor_telepon"
+                id="nomor_telepon"
+                pattern="(62)[0-9]{5,20}"
+            /><br />
+
+            <!-- Input URL -->
+            <label for="website">Website :</label>
+            <input type="url" name="website" id="website" /><br />
 
             <br />
             <!-- Input Reset -->
